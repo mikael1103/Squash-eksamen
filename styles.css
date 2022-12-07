@@ -10,6 +10,15 @@ body{
 
 .cardsol{
     display: flex;
+    justify-content: center;
+}
+.cardsol img{
+    max-height: 400px;
+}
+
+.cardsol img:hover{
+    transform: scale(1.08);
+    transition: all 1s ease;
 }
 
 
@@ -32,7 +41,7 @@ body{
     height: 1px;
     background: #F1A200;
     position: absolute;
-    left: -10%;
+    left: 0%;
     top: 50%;
 }
 
@@ -41,14 +50,15 @@ body{
     display: block;
     width: 200px;
     height: 1px;
-
     background: #F1A200;
     position: absolute;
-    right: -10%;
+    right: 0%;
     top: 50%;
 }
 
-/*Nyhedsfeet med kort på forside*/
+
+/*Nyhedsfeet med kort på forside. Er kopiret ind fra mit magasin
+også har jeg ændret farver, effekter osv. Så det passer til mit nuværende design.*/
 .container{
     display: flex;
     justify-content: center;
@@ -66,7 +76,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 
 .card-image{
@@ -124,6 +134,56 @@ body{
     transform: scale(1.03);
     transition: all 1s ease;
 }
+
+
+/*Under overskrift*/
+
+.underoverskrift h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2B2B2B;
+}
+.underoverskrift p{
+    display: flex;
+    justify-content: center;
+    color: #F1A200;
+}
+
+
+
+/*Kontakt formular*/
+input[type=text], select, textarea {
+    background-color: #F1A200;
+    color: #2B2B2B;
+    width: 600px;
+    display: flex;
+    padding: 12px;
+    border: 1px solid #2B2B2B;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  input[type=submit] {
+    background-color: #F1A200;
+    color: #2B2B2B;
+    padding: 12px 20px;
+    border: 1px solid #2B2B2B;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: #2B2B2B;
+    color: #F1A200;
+  }
+  .kontaktcontainer{
+    display: flex;
+    justify-content: center;
+  }
 
 
 
