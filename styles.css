@@ -2,11 +2,127 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
     background-color: #D7D7D7;
 }
 
 .cardsol{
     display: flex;
+}
+
+
+/*Overskrift med before and after streg*/
+.overskrift {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 100px auto 80px;
+    max-width: 820px;
+    position: relative;
+    color: #2B2B2B;
+    font-size: 30pt;
+}
+
+.overskrift:before {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 1px;
+    background: #F1A200;
+    position: absolute;
+    left: -10%;
+    top: 50%;
+}
+
+.overskrift:after {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 1px;
+
+    background: #F1A200;
+    position: absolute;
+    right: -10%;
+    top: 50%;
+}
+
+/*Nyhedsfeet med kort på forside*/
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: #2B2B2B;
+    color: #F1A200;
+    width: 300px;
+    margin: 10px;
+    border-radius: 15px;
+    min-height: fit-content;
+    align-self: normal;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 200px;
+}
+
+.card-image{
+    background-color: rgb(0, 0, 0);
+    height: 200px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.img1{
+    background-image: url(images/billede1.png);
+}
+
+.img2{
+    background-image: url(images/overskud.png);
+}
+
+.img3{
+    background-image: url(images/ugenstilbud.png);
+}
+
+.card h3{
+    padding: 10px;
+    text-align: center;
+}
+
+.card p{
+    padding: 10px;
+}
+
+.card .btn{
+    display: block;
+    margin-top: auto;
+
+}
+
+.card a{
+    background-color: #F1A200;
+    color: #2B2B2B;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+    border-radius: 15px;
+    text-decoration: none;
+    border-style: solid;
+    border-color: #2B2B2B;
+}
+
+.card:hover{
+    background-color: #F1A200;
+    color: #2B2B2B;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
 }
 
 
