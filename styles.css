@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #D7D7D7;
+}
+
+.cardsol{
+    display: flex;
+}
+
+
+
