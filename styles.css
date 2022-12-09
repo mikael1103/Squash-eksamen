@@ -8,10 +8,27 @@ body{
     background-color: #D7D7D7;
 }
 
+p{
+    font-family: 'Roboto Slab', serif;
+}
+
+h1{
+    font-family: 'Roboto Slab', serif;
+}
+
+h2{
+    font-family: 'Roboto Slab', serif;
+}
+
 /*Header logo*/
 .logo{
 display: flex;
 justify-content: center;
+}
+
+.logo:hover{
+    transform: scale(1.04);
+    transition: all 1s ease;
 }
 
 /*De 3 øl i toppen*/
@@ -92,14 +109,15 @@ også har jeg ændret farver, effekter osv. Så det passer til mit nuværende de
     margin-bottom: 15px;
     background-size: cover;
     border-radius: 15px;
+    margin: 5px;
 }
 
 .img1{
-    background-image: url(images/billede1.png);
+    background-image: url(images/story.png);
 }
 
 .img2{
-    background-image: url(images/overskud.png);
+    background-image: url(images/squashdesign.png);
 }
 
 .img3{
@@ -153,8 +171,11 @@ også har jeg ændret farver, effekter osv. Så det passer til mit nuværende de
     display: flex;
     justify-content: center;
     color: #F1A200;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    align-items: center;
+
 }
 
 
@@ -193,8 +214,19 @@ input[type=text], select, textarea {
   }
 
 /*NYT DESIGN SIDEN LAVER JEG HER, DA DER IKKE SKAL SÅ MEGET IND PÅ SIDEN*/
-.designbaggrund img{
-height: 600px;
-
-    
+.designbaggrund{
+    display: flex;
+    justify-content: center;
 }
+
+.designtext{
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+

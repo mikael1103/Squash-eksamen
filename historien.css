@@ -13,6 +13,10 @@ body{
 display: flex;
 justify-content: center;
 }
+.logo:hover{
+    transform: scale(1.04);
+    transition: all 1s ease;
+}
 
 /*Tuborg squash historien - Tidslinje*/
 .timeline{
