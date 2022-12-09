@@ -18,6 +18,39 @@ justify-content: center;
     transition: all 1s ease;
 }
 
+.historien-overskrift{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 0px auto 40px;
+        max-width: 820px;
+        position: relative;
+        color: #2B2B2B;
+        font-size: 30pt;
+    }
+    
+    .historien-overskrift:before {
+        content: '';
+        display: block;
+        width: 170px;
+        height: 1px;
+        background: #F1A200;
+        position: absolute;
+        left: -17%;
+        top: 50%;
+    }
+    
+    .historien-overskrift:after {
+        content: '';
+        display: block;
+        width: 170px;
+        height: 1px;
+        background: #F1A200;
+        position: absolute;
+        right: -17%;
+        top: 50%;
+    }
+
 /*Tuborg squash historien - Tidslinje*/
 .timeline{
     position: relative;
@@ -153,8 +186,11 @@ Både på højre og venstre side*/
     border-right: 15px solid #2B2B2B;
     left: -15px;
 }
-
-@media screen and (max-width: 600px){
+/* TIL MOBIL*/
+@media screen and (max-width: 600px)
+/* GØRE TIMELINE MINDRE OG RETTER HVOR DEN SKAL VÆRE
+SAMT ÆNDRE PÅ HVOR PILEN OG BILLEDERNE SKAL SIDDE NÅR MAN SKALERE NED*/
+{
     .timeline{
         margin: 50px auto;
     }
