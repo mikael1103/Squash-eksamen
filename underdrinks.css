@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #D7D7D7;
+    font-family: 'Roboto Slab', serif;
+}
+
+/*Header logo*/
+.logo{
+display: flex;
+justify-content: center;
+}
+.logo:hover{
+    transform: scale(1.04);
+    transition: all 1s ease;
+}
+/*Sætter på mine drinks sider navigationen i headeren*/
+.sidenav {
+    width: 130px;
+    z-index: 1;
+    top: 20px;
+    left: 10px;
+    overflow-x: hidden;
+    padding: 8px 0;
+    border-radius: 30px;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #2B2B2B;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #F1A200;
+  }
+  
+
+/*Generelle regler*/
+p{
+    font-family: 'Roboto Slab', serif;
+}
+
+h1{
+    font-family: 'Bree Serif', serif;
+}
+
+h2{
+    font-family: 'Bree Serif', serif;
+}
+
+h3{
+    font-family: 'Roboto Slab', serif;
+}
+
+.baggrund {
+    background: url(images/prøve.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;}
+
+.drinks-text{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+}
+
+.text-et{
+    width: 50%;
+    height: 400px;
+    color: #F1A200;
+    background-color: #2B2B2B;
+    text-align: left;
+    padding: 100px;
+    flex: 50%;
+    flex-wrap: wrap;
+}
+
+.text-to{
+    width: 50%;
+    height: 400px;
+    color: #2B2B2B;
+    background-color: #F1A200;
+    text-align: left;
+    padding: 100px;
+    flex: 50%;
+    flex-wrap: wrap;
+}
+
+.text-tre{
+    width: 50%;
+    height: 400px;
+    color: #2B2B2B;
+    background-color: #F1A200;
+    text-align: left;
+    padding: 100px;
+    flex: 50%;
+    flex-wrap: wrap;
+}
+
+.text-fire{
+    width: 50%;
+    height: 400px;
+    color: #F1A200;
+    background-color: #2B2B2B;
+    text-align: left;
+    padding: 100px;
+    flex: 50%;
+    flex-wrap: wrap;
+}

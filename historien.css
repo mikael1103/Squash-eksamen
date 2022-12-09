@@ -18,6 +18,31 @@ justify-content: center;
     transition: all 1s ease;
 }
 
+/*Navigations bar*/
+.sidenav {
+    width: 130px;
+    position: fixed;
+    z-index: 1;
+    top: 20px;
+    left: 10px;
+    background: #D7D7D7;
+    overflow-x: hidden;
+    padding: 8px 0;
+    border-radius: 30px;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #2B2B2B;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #F1A200;
+  }
+
 .historien-overskrift{
         display: flex;
         justify-content: center;

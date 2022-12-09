@@ -6,25 +6,6 @@
 
 body{
     background-color: #D7D7D7;
-    font-family: 'Roboto Slab', serif;
-}
-
-
-
-h1{
-    font-family: 'Bree Serif', serif;
-}
-
-h2{
-    font-family: 'Bree Serif', serif;
-}
-
-h3{
-    font-family: 'Roboto Slab', serif;
-}
-
-.btn{
-    font-family: 'Roboto Slab', serif;
 }
 
 /*Header logo*/
@@ -32,7 +13,6 @@ h3{
 display: flex;
 justify-content: center;
 }
-
 .logo:hover{
     transform: scale(1.04);
     transition: all 1s ease;
@@ -63,33 +43,28 @@ justify-content: center;
     color: #F1A200;
   }
   
-  .main {
-    margin-left: 140px; /* Same width as the sidebar + left position in px */
-    font-size: 28px; /* Increased text to enable scrolling */
-    padding: 0px 10px;
-  }
-
-
-
-
-
-
-/*De 3 øl i toppen*/
-.cardsol{
-    display: flex;
-    justify-content: center;
-}
-.cardsol img{
-    max-height: 400px;
+/*Generelle regler*/
+p{
+    font-family: 'Roboto Slab', serif;
 }
 
-.cardsol img:hover{
-    transform: scale(1.08);
-    transition: all 1s ease;
+h1{
+    font-family: 'Bree Serif', serif;
 }
 
+h2{
+    font-family: 'Bree Serif', serif;
+}
 
-/*Overskrift med before and after streg*/
+h3{
+    font-family: 'Roboto Slab', serif;
+}
+
+.btn{
+    font-family: 'Roboto Slab', serif;
+}
+
+/*OVERSKRIFT*/
 .overskrift {
     display: flex;
     justify-content: center;
@@ -124,8 +99,7 @@ justify-content: center;
 }
 
 
-/*Nyhedsfeet med kort på forside. Er kopiret ind fra mit magasin
-også har jeg ændret farver, effekter osv. Så det passer til mit nuværende design.*/
+/*KORT PÅ SIDEN*/
 .container{
     display: flex;
     justify-content: center;
@@ -203,73 +177,77 @@ også har jeg ændret farver, effekter osv. Så det passer til mit nuværende de
     transition: all 1s ease;
 }
 
-
-/*Under overskrift til konkurrence*/
-.underoverskrift h2{
+/*KORT I MIDTEN*/
+.container{
     display: flex;
     justify-content: center;
-    color: #2B2B2B;
-}
-.underoverskrift p{
-    display: flex;
-    justify-content: center;
-    color: #F1A200;
-    width: 450px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-
+    flex-wrap: wrap;
 }
 
-
-
-/*Kontakt formular*/
-input[type=text], select, textarea {
+.cardmid{
     background-color: #F1A200;
     color: #2B2B2B;
-    width: 600px;
+    width: 300px;
+    margin: 10px;
+    border-radius: 15px;
+    min-height: fit-content;
+    align-self: normal;
     display: flex;
-    padding: 12px;
-    border: 1px solid #2B2B2B;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-  }
-
-  input[type=submit] {
-    background-color: #F1A200;
-    color: #2B2B2B;
-    padding: 12px 20px;
-    border: 1px solid #2B2B2B;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-
-  input[type=submit]:hover {
-    background-color: #2B2B2B;
-    color: #F1A200;
-  }
-  .kontaktcontainer{
-    display: flex;
-    justify-content: center;
-  }
-
-/*NYT DESIGN SIDEN LAVER JEG HER, DA DER IKKE SKAL SÅ MEGET IND PÅ SIDEN*/
-.designbaggrund{
-    display: flex;
-    justify-content: center;
-}
-
-.designtext{
-    text-align: left;
-    display: flex;
-    justify-content: center;
-    width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 20px;
+    flex-wrap: wrap;
+    flex-direction: column;
     margin-bottom: 100px;
 }
 
+.card-image{
+    background-color: rgb(0, 0, 0);
+    height: 200px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+
+.imgmid1{
+    background-image: url(images/squashdesign.png);
+}
+
+.imgmid2{
+    background-image: url(images/squashdesign.png);
+}
+
+.cardmid h3{
+    padding: 10px;
+    text-align: center;
+}
+
+.cardmid p{
+    padding: 10px;
+}
+
+.cardmid .btn{
+    display: block;
+    margin-top: auto;
+
+}
+
+.cardmid a{
+    background-color: #2B2B2B;
+    color: #F1A200;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+    border-radius: 15px;
+    text-decoration: none;
+    border-style: solid;
+    border-color: #F1A200;
+}
+
+.cardmid:hover{
+    background-color: #2B2B2B;
+    color: #F1A200;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
