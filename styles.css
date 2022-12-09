@@ -10,7 +10,6 @@ body{
 }
 
 
-
 h1{
     font-family: 'Bree Serif', serif;
 }
@@ -63,11 +62,6 @@ justify-content: center;
     color: #F1A200;
   }
   
-  .main {
-    margin-left: 140px; /* Same width as the sidebar + left position in px */
-    font-size: 28px; /* Increased text to enable scrolling */
-    padding: 0px 10px;
-  }
 
 
 
@@ -164,7 +158,7 @@ også har jeg ændret farver, effekter osv. Så det passer til mit nuværende de
 }
 
 .img3{
-    background-image: url(images/ugenstilbud.png);
+    background-image: url(images/densuredrink.jpg);
 }
 
 .card h3{
