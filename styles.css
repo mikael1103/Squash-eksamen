@@ -44,7 +44,6 @@ justify-content: center;
     z-index: 1;
     top: 20px;
     left: 10px;
-    background: #D7D7D7;
     overflow-x: hidden;
     padding: 8px 0;
     border-radius: 30px;
@@ -254,6 +253,7 @@ input[type=text], select, textarea {
 .designbaggrund{
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .designtext{
@@ -267,3 +267,74 @@ input[type=text], select, textarea {
     margin-bottom: 100px;
 }
 
+/*Mobil Design side*/
+@media screen and (max-width: 768px){
+
+.designbaggrund{
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+
+.designtext{
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.overskrift {
+    margin: 10px auto 30px;
+    text-align: center;
+    max-width: 820px;
+    position: relative;
+
+    color: #2B2B2B;
+    font-size: 15pt;
+}
+
+.overskrift:before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 1px;
+
+    background: #F1A200;
+    position: absolute;
+    left: 8%;
+    top: 50%;
+}
+
+.overskrift:after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 1px;
+
+    background: #F1A200;
+    position: absolute;
+    right: 8%;
+    top: 50%;
+}
+
+/* Mobil til forside */
+.underoverskrift{
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+.underoverskrift p{
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+.kontaktcontainer{
+    width: 100%;
+    margin-top: 0%;
+}
+
+input[type=text], select, textarea {
+width: 300px;
+}
+}

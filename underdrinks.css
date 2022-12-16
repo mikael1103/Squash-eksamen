@@ -60,7 +60,7 @@ h3{
 }
 
 .baggrund {
-    background: url(images/prøve.jpg);
+    background: url(images/Juledrink.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -118,4 +118,23 @@ h3{
     padding: 100px;
     flex: 50%;
     flex-wrap: wrap;
+}
+
+/*MOBIL*/
+@media (max-width: 910px) {
+    .drinks-text {
+        flex-flow: row wrap;
+        width: 100%;
+        height: 500px;
+        padding: 50px;
+    }
+
+
+.text-fire{
+    order: 1;
+}
+
+.text-tre{
+    order: 2;
+}
 }

@@ -18,31 +18,6 @@ justify-content: center;
     transition: all 1s ease;
 }
 
-/*Navigations bar*/
-.sidenav {
-    width: 130px;
-    position: fixed;
-    z-index: 1;
-    top: 20px;
-    left: 10px;
-    background: #D7D7D7;
-    overflow-x: hidden;
-    padding: 8px 0;
-    border-radius: 30px;
-  }
-  
-  .sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 15px;
-    color: #2B2B2B;
-    display: block;
-  }
-  
-  .sidenav a:hover {
-    color: #F1A200;
-  }
-
 .historien-overskrift{
         display: flex;
         justify-content: center;
@@ -57,7 +32,7 @@ justify-content: center;
     .historien-overskrift:before {
         content: '';
         display: block;
-        width: 170px;
+        width: 200px;
         height: 1px;
         background: #F1A200;
         position: absolute;
@@ -212,7 +187,7 @@ Både på højre og venstre side*/
     left: -15px;
 }
 /* TIL MOBIL*/
-@media screen and (max-width: 600px)
+@media screen and (max-width: 768px)
 /* GØRE TIMELINE MINDRE OG RETTER HVOR DEN SKAL VÆRE
 SAMT ÆNDRE PÅ HVOR PILEN OG BILLEDERNE SKAL SIDDE NÅR MAN SKALERE NED*/
 {
