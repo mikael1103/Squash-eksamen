@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/*Generelle regler for siden og overskrifter*/
 body{
     background-color: #D7D7D7;
     font-family: 'Roboto Slab', serif;
@@ -22,6 +22,10 @@ h3{
     font-family: 'Roboto Slab', serif;
 }
 
+h6{
+    font-family: 'Roboto Slab', serif;
+}
+
 .btn{
     font-family: 'Roboto Slab', serif;
 }
@@ -31,7 +35,7 @@ h3{
 display: flex;
 justify-content: center;
 }
-
+/*Hover effekt på logo*/
 .logo:hover{
     transform: scale(1.04);
     transition: all 1s ease;
@@ -67,7 +71,7 @@ footer{
     padding: 2rem 16vw;
     margin-top: 20px;
 }
-
+/*Styling af ikoner*/
 .social-icons{
     display: flex;
     justify-content: center;
@@ -87,11 +91,13 @@ footer{
     color: #F1A200;
     }
 
+/*Styling af hr*/
 hr{
         background-color:#F1A200;
         margin: 30px 0;
     }
 
+/*Styling af mainfooteren, samt tekst og overskrifter i footeren*/
 .mainfooter{
         display: flex;
         justify-content: space-between;
@@ -377,7 +383,7 @@ input[type=text], select, textarea {
     top: 50%;
 }
 
-/* Mobil til forside */
+/* Mobil til forside*/
 .underoverskrift{
     width: auto;
     height: auto;
