@@ -56,7 +56,7 @@ justify-content: center;
   .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 18px;
     color: #2B2B2B;
     display: block;
   }
@@ -384,6 +384,10 @@ input[type=text], select, textarea {
 }
 
 /* Mobil til forside*/
+.sidenav a {
+    font-size: 12px;
+}
+
 .underoverskrift{
     width: auto;
     height: auto;
@@ -403,5 +407,16 @@ input[type=text], select, textarea {
 
 input[type=text], select, textarea {
 width: 300px;
+}
+
+.cardsol{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: auto;
+}
+.cardsol img{
+    height: 200px;
+    width: auto;
 }
 }

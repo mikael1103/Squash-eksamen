@@ -107,6 +107,12 @@ h3{
     padding: 100px;
     flex: 50%;
     flex-wrap: wrap;
+    text-decoration: none;
+}
+
+.text-fire a{
+    text-decoration: none;
+    color: #F1A200;
 }
 
 .text-fire{
@@ -125,8 +131,7 @@ h3{
     .drinks-text {
         flex-flow: row wrap;
         width: 100%;
-        height: 500px;
-        padding: 50px;
+        height: 800px;
     }
 
 
