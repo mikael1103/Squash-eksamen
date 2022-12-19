@@ -66,6 +66,24 @@ h3{
     width: 100%;
     height: 400px;}
 
+.baggrund-tq {
+        background: url(images/tequiladrink.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 400px;}
+
+
+.baggrund-sur{
+    background: url(images/densuredrink.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+object-position: top left;}
+
+
+
 .drinks-text{
     display: flex;
     justify-content: center;
@@ -114,6 +132,9 @@ h3{
     text-decoration: none;
     color: #F1A200;
 }
+
+.text-fire a:hover{
+    text-decoration: underline;}
 
 .text-fire{
     width: 50%;
