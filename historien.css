@@ -17,7 +17,7 @@ justify-content: center;
     transform: scale(1.04);
     transition: all 1s ease;
 }
-
+/*Overskrift*/
 .historien-overskrift{
         display: flex;
         justify-content: center;
@@ -28,7 +28,7 @@ justify-content: center;
         color: #2B2B2B;
         font-size: 30pt;
     }
-    
+/*Streg teksten*/
     .historien-overskrift:before {
         content: '';
         display: block;
@@ -39,7 +39,7 @@ justify-content: center;
         left: -17%;
         top: 50%;
     }
-    
+/*Streg efter teksten*/
     .historien-overskrift:after {
         content: '';
         display: block;
@@ -120,7 +120,8 @@ så det kommer smooth ned sammen med stregen*/
 .right{
     left: 50%;
 }
-/*Tidslinjen der går imellem de forskellige bokse*/
+/*Tidslinjen der går imellem de forskellige bokse som får en animation
+hvor den rykker ned af og det tager 4 sekunder fra top til bund.*/
 .timeline:after{
     content: '';
     position: absolute;
@@ -143,11 +144,13 @@ så det passer til mine billeder og mine bokse popper op*/
 
     100%{ height: 100%;}
 }
+
+/*Overskrift i boksen*/
 .text-box h2{
     font-weight: 600;
     margin-bottom: 15px;
 }
-
+/*Størrelse på billederne, samt left -20px så de kommer på plads og sidder på linjen.*/
 .timeline-container img{
     position: absolute;
     width: 40px;
@@ -191,7 +194,7 @@ Både på højre og venstre side*/
 /* GØRE TIMELINE MINDRE OG RETTER HVOR DEN SKAL VÆRE
 SAMT ÆNDRE PÅ HVOR PILEN OG BILLEDERNE SKAL SIDDE NÅR MAN SKALERE NED*/
 {
-
+/*Starte med at rette på overskiften, da den er ret stor, så den passer til en iphone 12 pro*/
     .historien-overskrift {
         margin: 10px auto 30px;
         text-align: center;
@@ -225,19 +228,20 @@ SAMT ÆNDRE PÅ HVOR PILEN OG BILLEDERNE SKAL SIDDE NÅR MAN SKALERE NED*/
         right: 8%;
         top: 50%;
     }
+    /*Gør så tidslinjen kommer ud til venstre og får en margin på 50px*/
     .timeline{
         margin: 50px auto;
     }
     .timeline:after{
         left: 31px;
     }
-
+/*Gør containeren 100% width og laver padding, så det fylder hele siden*/
     .timeline-container{
         width: 100%;
         padding-left: 80px;
         padding-right: 25px;
     }
-    
+    /*Ændre font size, så det bliver mindre*/
     .textbox{
         font-size: 13px;
     }
@@ -245,7 +249,7 @@ SAMT ÆNDRE PÅ HVOR PILEN OG BILLEDERNE SKAL SIDDE NÅR MAN SKALERE NED*/
     .right{
         left: 0;
     }
-
+/*Rykker pilene, samt de små runde billeder så de passer*/
     .left img, .right img{
         left: 10px;
     }

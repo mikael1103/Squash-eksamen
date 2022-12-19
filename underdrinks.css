@@ -28,7 +28,7 @@ justify-content: center;
     padding: 8px 0;
     border-radius: 30px;
   }
-  
+  /*Styling af tekst i navigations baren*/
   .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
@@ -36,7 +36,7 @@ justify-content: center;
     color: #2B2B2B;
     display: block;
   }
-  
+  /*Hover effekt, så teksten bliver orange når musen er over*/
   .sidenav a:hover {
     color: #F1A200;
   }
@@ -59,6 +59,7 @@ h3{
     font-family: 'Roboto Slab', serif;
 }
 
+/*Styling af tilføjer baggrundbillede på toppen af hjemmesiden, med en height på 400px*/
 .baggrund {
     background: url(images/Juledrink.jpg);
     background-size: cover;
@@ -83,7 +84,7 @@ h3{
 object-position: top left;}
 
 
-
+/*Laver en boks med 2 sektioner i, en orange og en sort*/
 .drinks-text{
     display: flex;
     justify-content: center;
@@ -93,7 +94,7 @@ object-position: top left;}
     flex-wrap: wrap;
     margin-left: auto;
 }
-
+/*Dette er den sorte boks, som fylder 50%*/
 .text-et{
     width: 50%;
     height: 400px;
@@ -104,7 +105,7 @@ object-position: top left;}
     flex: 50%;
     flex-wrap: wrap;
 }
-
+/*Dette er den orange boks som fylder 50%*/
 .text-to{
     width: 50%;
     height: 400px;
@@ -115,7 +116,7 @@ object-position: top left;}
     flex: 50%;
     flex-wrap: wrap;
 }
-
+/*Også modsat af de to andre her, så de ligsom er forskellige fra hinanden*/
 .text-tre{
     width: 50%;
     height: 400px;
@@ -128,6 +129,7 @@ object-position: top left;}
     text-decoration: none;
 }
 
+/*Fjerner tekst dekoration fra links og giver dem en hover effekt*/
 .text-fire a{
     text-decoration: none;
     color: #F1A200;
@@ -148,14 +150,15 @@ object-position: top left;}
 }
 
 /*MOBIL*/
-@media (max-width: 910px) {
+@media (max-width: 768px) {
+    /*På mobil laver jeg row wrap så de kommer under hinanden med en height på 800px*/
     .drinks-text {
         flex-flow: row wrap;
         width: 100%;
         height: 800px;
     }
 
-
+/* Jeg ændre order på tekst fire og tekst tre, så det bliver orange, sort, orange sort*/
 .text-fire{
     order: 1;
 }
